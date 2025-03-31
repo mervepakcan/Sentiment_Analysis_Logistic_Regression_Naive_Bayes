@@ -9,9 +9,7 @@ This project performs sentiment classification on IMDB movie reviews using two s
 - [Modeling](#modeling)  
 - [Results & Evaluation](#results--evaluation)  
 - [Technologies](#technologies)  
-- [Getting Started](#getting-started)  
-- [Usage](#usage)  
-- [Author](#author)  
+ 
 
 ---
 
@@ -72,14 +70,14 @@ Steps included:
 
 ## 📈 Results & Evaluation
 
-| Model               | Accuracy | Precision | Recall | F1-score |
-|--------------------|----------|-----------|--------|----------|
-| Logistic Regression | ~88%     | High      | Medium | Strong   |
-| Naive Bayes         | ~84%     | Medium    | High   | Balanced |
+| Model               | Accuracy | Notes                            |
+|--------------------|----------|----------------------------------|
+| Logistic Regression | ~62%     | Implemented from scratch         |
+| Naive Bayes         | ~84.7%   | Higher accuracy and performance  |
 
-- Logistic Regression delivered better **accuracy**
-- Naive Bayes performed well in terms of **recall**
-- Both models showed **strong generalization** to unseen data
+- **Naive Bayes** outperformed Logistic Regression in terms of accuracy.
+- Logistic Regression was implemented manually using mathematical formulation without libraries.
+- Naive Bayes was implemented from scratch using probabilistic word frequency calculations.
 
 ---
 
@@ -91,12 +89,3 @@ Steps included:
 - Scikit-learn  
 - NLTK  
 - Matplotlib, Seaborn
-
----
-
-## 🚀 Getting Started
-
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/imdb-sentiment-analysis.git
-cd imdb-sentiment-analysis
