@@ -11,7 +11,7 @@ This project performs sentiment classification on IMDB movie reviews using two s
 - [Technologies](#technologies)  
  
 
----XX
+---
 
 ## 🔍 Project Overview
 
