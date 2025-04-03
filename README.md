@@ -1,15 +1,6 @@
 # 🎬 IMDB Sentiment Analysis with Machine Learning
 
-This project performs sentiment classification on IMDB movie reviews using two supervised machine learning algorithms: **Logistic Regression** and **Multinomial Naive Bayes**. The aim is to detect whether a given review expresses a positive or negative sentiment.
-
-📑 **Table of Contents**
-- [Project Overview](#project-overview)  
-- [Data Description](#data-description)  
-- [Preprocessing & Feature Engineering](#preprocessing--feature-engineering)  
-- [Modeling](#modeling)  
-- [Results & Evaluation](#results--evaluation)  
-- [Technologies](#technologies)  
- 
+This project performs sentiment classification on IMDB movie reviews using two supervised machine learning algorithms: **Logistic Regression** and ** Naive Bayes**. The aim is to detect whether a given review expresses a positive or negative sentiment.
 
 ---
 
@@ -26,18 +17,18 @@ The project focuses on:
 ---
 
 ## 📊 Data Description
+🔗 Original Source:
+Stanford Large Movie Review Dataset v1.0 : http://ai.stanford.edu/~amaas/data/sentiment/
 
 The dataset used in this project is the Large Movie Review Dataset (IMDB) developed by Andrew L. Maas et al. (2011) at Stanford University. It contains 50,000 highly polar movie reviews—25,000 for training and 25,000 for testing, evenly split between positive and negative sentiments.
 
-Format: CSV
 Balanced classes: 50% positive, 50% negative
-Language: English
 Label: Binary (positive, negative)
-🔗 Original Source:
-Stanford Large Movie Review Dataset v1.0
 
 📁 Dataset on Kaggle:
-IMDB Dataset of 50K Movie Reviews
+IMDB Dataset of 50K Movie Reviews:https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
+
+There was 1 issue in one row, thats way that row eliminated.
 
 ---
 
@@ -61,7 +52,7 @@ Steps included:
 - Trained using gradient descent
 - Evaluated on a hold-out test set
 
-### 2. Multinomial Naive Bayes
+### 2. Naive Bayes
 - Applied to the same preprocessed text features
 - Used scikit-learn’s implementation
 - Includes ratio analysis and custom word-level prediction
